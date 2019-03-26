@@ -6,26 +6,61 @@ body * {
     box-sizing: border-box;
 }
 .hero-background {
-    background-color: blue;
+   background-image: url( ../img/fons.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;s
 }
 
 .hero-content {
     display:inline-block;
-    width: 500px;
-    margin: 40px calc((100% - 500px) / 2) 20px;
-    background-color: red;
+    width: 900px;
+    margin: 40px calc( (100% - 900px) / 2) 20px;
+    /* background-color: red; */
 }
-    #hero .logo {
+    .hero-content > .logo  {
+       background-position: center;
+    /* background-color: blue; */
+        margin: 0 calc((100% - 30px) / 2);
+        padding: 40px 0 30px;
+    }
+    .hero-content > h1 {
+        background-position: center;
+        /* background-color: green; */
+        text-align: center; 
+        font-size: 250%;
+        font-family: "Arial Black", Gadget, sans-serif;
+    }
+    .hero-content > p {
+        width: 450px;
+        background-position: center;
+        text-align: center;
+        margin: 0 calc((100% - 450px) / 2);
+    }
+    .mail{
+        background-position: center;
+        display: block;
+        background-color: aqua;
         
     }
-    #hero h1{
 
-    }
-
-    #hero .clock {      
+    .clock {
+        width: 50%; 
+        /* background-color: aqua;  */
+        display: inline-block;
+        background-position: center;
+        margin: 0 calc((100% - 50% ) / 2);
+        text-align: center;
     }   
-        /* #hero .clock  */
-
+        .clock-block {
+        display: inline-block;
+        background-position: center;
+        widths: 50px;
+        padding: 0 10px;
+        }
+        .value {
+            font-size: 50px;
+        }
         #hero form > input {
 
         }

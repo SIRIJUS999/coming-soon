@@ -9,7 +9,7 @@ body * {
    background-image: url( ../img/fons.png);
    background-position: center;
    background-size: cover;
-   background-repeat: no-repeat;s
+   background-repeat: no-repeat;
 }
 
 .hero-content {
@@ -25,34 +25,56 @@ body * {
         padding: 40px 0 30px;
         text-align: center;
     }
-    .hero-content > h1 {
-        background-position: center;
-        /* background-color: green; */
-        text-align: center; 
-        font-size: 250%;
-        font-family: "Arial Black", Gadget, sans-serif;
-        padding-bottom: 20px;
+        .hero-content > h1 {
+            background-position: center;
+            /* background-color: green; */
+            text-align: center; 
+            font-size: 350%;
+            font-family: "Arial Black", Gadget, sans-serif;
+            padding-bottom: 20px;
     }
-    .hero-content > p {
-        width: 450px;
-        background-position: center;
-        text-align: center;
-        margin: 0 calc((100% - 450px) / 2);
+        .hero-content > p {
+            width: 100%;
+            background-position: center;
+            text-align: center;
+            
+            font-size: 25px;
+            color: yellow;
         
     }
-    .mail{
+    .mail {
         background-position: center;
-        display: block;
-        background-color: aqua;
+        display:block;
+        /* background-color: aqua; */
+    
         
     }
+        .mail > input {
+            width: 50%;
+            margin: 0 calc((100% - 50%) / 2);
+            font-size: 20px;
+            display: inline-block;
+            background-color: transparent;
+            outline:none;
+            border: none;
+            border-bottom: 2px solid whitesmoke;
+            line-height: 30px;
+            height: 40px;
+            
+        }
+            .mail > input::placeholder {
+                color: #FFF; 
+                font-size: 15px;
+                line-height: 40px;
+            }
+        
 
     .clock {
-        width: 50%; 
+        width: 100%;
         /* background-color: aqua;  */
         display: inline-block;
         background-position: center;
-        margin: 0 calc((100% - 50% ) / 2);
+       
         text-align: center;
         padding: 60px 0;
     }   
@@ -60,15 +82,99 @@ body * {
         display: inline-block;
         background-position: center;
         widths: 50px;
-        padding: 0 10px;
+        padding: 0 15px;
         }
-        .value {
-            font-size: 50px;
+            .clock-block > title {
+                font-size: 20px;
+            }
+             .value {
+                font-size: 60px;
+                font-family: "Arial Black", Gadget, sans-serif;
+            }
+        .btn {
+            text-align: center;
+            padding-top: 40px;
+            /* background-color: #EA1E63; */
+            
         }
-        #hero form > input {
+        .btn > a {
+            text-align: center;
+            background-color: #EA1E63;
+            padding: 10px 25px;
+            border-radius: 5px;
+            text-decoration-line: none; 
+            color: #FFF;
+        }
+            .btn > a:hover {
+                background-color: blue;
+                cursor: -webkit-grab;
+            }
+    .container {
+        display:inline-block;
+        width: 900px;
+        margin: 40px calc( (100% - 900px) / 2) 20px;
+    }
+        .left {
+            display: inline-block;
+            width: 45%;
+            float: left;
+            margin: 0 20px; 
+        }
+            /* .progress-bar * {
+                width: 90%;
+            } */
+        .right {
+            display: inline-block;
+            width: 40%;
+            float: right;
+            margin: 0 20px;
+        }
+        .container > .left > h3 ,
+        .container > .right > h3 {
+            padding-bottom: 30px;
+        }
+            .mail-2 {
+                width: 100%;
+                font-size: 20px;
+                display: inline-block;
+                padding-top: 50px;  
+            } 
+                .mail-2 > input {
+                    outline:none;
+                    border: none;
+                    border-bottom: 2px solid rgb(139, 139, 139);
+                    width: 46%;
+                    line-height: 30px;
+                    height: 40px;
+                }
+                    .mail-2 > input::placeholder ,
+                    .mail-3 > input::placeholder {
+                        color: rgb(139, 139, 139); 
+                        font-size: 15px;
+                        line-height: 40px;
+         }
+            .mail-3 {
+                width: 100%;
+                font-size: 20px;
+                display: inline-block;
+                padding-top: 50px;
+            }
+                .mail-3 > input {
+                    outline:none;
+                    border: none;
+                    border-bottom: 2px solid rgb(139, 139, 139);
+                    width: 100%;
+                    line-height: 30px;
+                    height: 40px;
+     }
+        @media ( max-width: 900px ) {
+            #content .container {
+                width: 540px;
+                margin: 40px calc( (100% - 540px) / 2 ) 20px;
+        /* #hero form > input {
 
-        }
+        } */
         
-        #hero form > .btn {
+        /* #hero form > .btn {
 
-        }
+        } */
